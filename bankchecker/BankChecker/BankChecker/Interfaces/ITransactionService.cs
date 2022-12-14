@@ -1,4 +1,4 @@
-using BankChecker.Models;
+using Services.Models.Domain;
 
 namespace BankChecker.Interfaces;
 

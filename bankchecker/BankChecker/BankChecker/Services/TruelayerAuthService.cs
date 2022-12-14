@@ -1,3 +1,5 @@
+using Services.Models;
+
 namespace BankChecker.Services;
 
 class TruelayerAuthService : ITruelayerAuthService

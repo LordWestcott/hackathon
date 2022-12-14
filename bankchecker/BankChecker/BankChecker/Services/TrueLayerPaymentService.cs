@@ -1,4 +1,5 @@
-using BankChecker.Models.TrueLayer;
+using Services.Models.Domain;
+using Services.Models.TrueLayer;
 
 namespace BankChecker.Services;
 

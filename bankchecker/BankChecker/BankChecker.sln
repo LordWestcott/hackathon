@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankChecker", "BankChecker\BankChecker.csproj", "{ACBA73E1-2021-4179-AD3E-D6D76B53D8BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankThingy", "BankThingy\BankThingy.csproj", "{18B97181-E1ED-46A2-9930-03967F0C8D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{7DFC7116-5398-42FF-B22C-EF5CE2E5E694}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{ACBA73E1-2021-4179-AD3E-D6D76B53D8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACBA73E1-2021-4179-AD3E-D6D76B53D8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACBA73E1-2021-4179-AD3E-D6D76B53D8BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B97181-E1ED-46A2-9930-03967F0C8D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B97181-E1ED-46A2-9930-03967F0C8D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B97181-E1ED-46A2-9930-03967F0C8D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B97181-E1ED-46A2-9930-03967F0C8D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DFC7116-5398-42FF-B22C-EF5CE2E5E694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DFC7116-5398-42FF-B22C-EF5CE2E5E694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DFC7116-5398-42FF-B22C-EF5CE2E5E694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DFC7116-5398-42FF-B22C-EF5CE2E5E694}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

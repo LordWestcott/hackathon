@@ -1,3 +1,6 @@
+using Services.Models.Domain;
+using Services.Models.TrueLayer;
+
 namespace BankChecker.Services;
 
 public class TruelayerAccountService : IAccountService

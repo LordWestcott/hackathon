@@ -1,4 +1,4 @@
-namespace BankChecker.Services;
+namespace BankChecker.Interfaces;
 
 public interface IConfigService
 {
