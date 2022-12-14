@@ -18,7 +18,7 @@ class TrueLayerPaymentService : IPaymentService
     public async Task SendPayment(Payment payment)
     {
         var trueLayerRequest = _mapper.Map<PaymentRequest>(payment);
-        var trueLayerDomain = _configService.GetValue(ConfigConstants.Domain);
-        await $"https://{trueLayerDomain}/payments".WithOAuthBearerToken(_truelayerAuthService.GetToken("")).PostJsonAsync(trueLayerRequest);
+        var trueLayerDomain = _configService.GetValue(ConfigConstants.TrueLayerApiDomain);
+        await $"https://{trueLayerDomain}/payments".WithOAuthBearerToken(await _truelayerAuthService.GetToken("")).PostJsonAsync(trueLayerRequest);
     }
 }

@@ -14,7 +14,7 @@ public class TruelayerAccountService : IAccountService
     }
     public async Task<List<Account>> GetAccounts()
     {
-        var jsonAsync = await $"https://{_configService.GetValue(ConfigConstants.Domain)}/data/v1/accounts".WithOAuthBearerToken(_truelayerAuthService.GetToken(""))
+        var jsonAsync = await $"https://{_configService.GetValue(ConfigConstants.TrueLayerApiDomain)}/data/v1/accounts".WithOAuthBearerToken(await _truelayerAuthService.GetToken(""))
             .GetJsonAsync<TrueLayerAccountResponse>();
         return _mapper.Map<List<Account>>(jsonAsync.results);
     }

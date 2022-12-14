@@ -17,8 +17,8 @@ public class TrueLayerTransactionService : ITransactionService
     }
     public async Task<List<Transaction>> GetTransactions(string accountId)
     {
-        var trueLayerDomain = _configService.GetValue(ConfigConstants.Domain);
-        var transactions = await $"https://{trueLayerDomain}/data/v1/accounts/{accountId}/transactions?from={Url.Encode(DateTime.Now.AddHours(-24).ToString())}".WithOAuthBearerToken(_authService.GetToken(accountId)).GetAsync();
+        var trueLayerDomain = _configService.GetValue(ConfigConstants.TrueLayerApiDomain);
+        var transactions = await $"https://{trueLayerDomain}/data/v1/accounts/{accountId}/transactions?from={Url.Encode(DateTime.Now.AddHours(-24).ToLongTimeString())}".WithOAuthBearerToken(await _authService.GetToken(accountId)).GetAsync();
         var jsonAsync = await transactions.GetJsonAsync<TrueLayerTransactionResponse>();
         return _mapper.Map<List<Transaction>>(jsonAsync.results);
     }

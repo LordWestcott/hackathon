@@ -2,5 +2,6 @@ namespace BankChecker.Interfaces;
 
 public interface ITruelayerAuthService
 {
-    string GetToken(string accountId);
+    Task<string> GetToken(string accountId);
+    Task<string> GetNewAccessToken();
 }

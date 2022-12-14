@@ -17,6 +17,7 @@ class FunctionRunner : IFunctionRunner
 
     public async Task Run()
     {
+        
         Console.WriteLine("Hi Im your friendly charity rounder upper");
         var accounts = await _accountService.GetAccounts();
         Console.WriteLine($"I have found {accounts.Count} accounts");
