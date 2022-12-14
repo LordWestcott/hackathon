@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankChecker", "BankChecker\BankChecker.csproj", "{ACBA73E1-2021-4179-AD3E-D6D76B53D8BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACBA73E1-2021-4179-AD3E-D6D76B53D8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACBA73E1-2021-4179-AD3E-D6D76B53D8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACBA73E1-2021-4179-AD3E-D6D76B53D8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACBA73E1-2021-4179-AD3E-D6D76B53D8BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
