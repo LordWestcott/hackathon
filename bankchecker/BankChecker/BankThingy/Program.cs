@@ -12,6 +12,8 @@ builder.Services.AddSingleton<IStreakService, StreakService>();
 builder.Services.AddAutoMapper(typeof(AutomapperProfile));
 builder.Services.AddDefaultAWSOptions(new AWSOptions());
 builder.Services.AddAWSService<AmazonDynamoDBClient>();
+builder.Services.AddAWSLambdaHosting(LambdaEventSource.RestApi);
+
 var app = builder.Build();
 app.MapGet("/transactions", async (string userid) => await app.Services.GetService<ITransactionsService>().GetTransactions(userid));
 app.MapGet("/userstreaks", async (string userid) => await app.Services.GetService<IStreakService>().GetUserStreak(userid));
